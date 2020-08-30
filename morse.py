@@ -1,3 +1,4 @@
+name =[]
 x: int = 1
 while(x == 1):
     y1 = int(input('1 for numbers, 2 for letters: '))
@@ -56,7 +57,12 @@ while(x == 1):
             code = '-.--'
         elif (x1 == 'z' or x1 == 'Z'):
             code = '--..'
+        elif (x1 == ' ' or x1 == ' '):
+            code = ' '
         print('letter:', x1, 'is:', code)
+        y = code
+        name.append(y)
+        print(name)
     elif(y1 == 1):
         x2 = int(input('type your number: '))
         code1: int = 0
@@ -80,5 +86,10 @@ while(x == 1):
             code1 = '---..'
         elif (x2 == 9):
             code1 = '----.'
+        elif (x2 == ' '):
+            code = ' '
         print('the number: ', x2, 'is: ', code1)
+        y = code1
+        name.append(y)
+        print(name)
     x = int(input('type 1 for continue'))
